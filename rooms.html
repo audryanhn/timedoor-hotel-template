@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="mainNav">
+      <div class="nav-inner">
+        <a class="logo" href="/index.html" target="_self"
+          >The<span>Grand</span></a
+        >
+        <ul class="nav-links">
+          <li>
+            <a href="/index.html" target="_self" id="nav-home">Home</a>
+          </li>
+          <li>
+            <a href="/rooms.html" id="nav-rooms" class="active" target="_self"
+              >Rooms</a
+            >
+          </li>
+          <li>
+            <a href="/about.html" id="nav-about" target="_self">About</a>
+          </li>
+          <li>
+            <a href="/contact.html" id="nav-contact" target="_self">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <div class="lang-switch">
+            <button class="lang-btn active" onclick="setLang('EN')">EN</button>
+            <button class="lang-btn" onclick="setLang('ID')">ID</button>
+          </div>
+          <button
+            class="nav-cta"
+            onclick="window.location.href = 'contact.html'"
+            id="nav-cta-btn"
+          >
+            Reserve
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== ROOMS PAGE ===== -->
+    <div class="page" id="page-rooms">
+      <div class="page-hero" style="padding-top: 72px">
+        <div class="hero-grid-pattern"></div>
+        <div class="page-hero-content">
+          <div class="section-eyebrow" style="color: var(--gold)" id="rp-tag">
+            Accommodations
+          </div>
+          <h1 id="rp-title">Rooms & Suites</h1>
+        </div>
+      </div>
+      <div class="rooms-list">
+        <div class="room-list-card">
+          <div class="room-list-img">
+            <div
+              class="room-list-img-inner"
+              style="
+                background: linear-gradient(135deg, #1c2b3a 0%, #2a3a4a 100%);
+                position: relative;
+              "
+            >
+              <div
+                class="room-pattern"
+                style="position: absolute; inset: 0; opacity: 0.12"
+              ></div>
+              <div
+                class="room-num"
+                style="
+                  position: absolute;
+                  bottom: 10px;
+                  right: 16px;
+                  font-family: &quot;Cormorant Garamond&quot;, serif;
+                  font-size: 5rem;
+                  font-weight: 600;
+                  color: rgba(255, 255, 255, 0.12);
+                "
+              >
+                01
+              </div>
+              <div class="room-badge">Deluxe</div>
+            </div>
+          </div>
+          <div class="room-list-body">
+            <div>
+              <h3>Deluxe City View Room</h3>
+              <p>
+                Our entry into luxury — the Deluxe Room offers 52 sqm of
+                thoughtfully designed space with floor-to-ceiling windows
+                framing the Jakarta skyline. Appointed with hand-stitched
+                linens, marble bathrooms, and custom-blend toiletries.
+              </p>
+              <div class="room-specs">
+                <div class="spec-item">
+                  <div class="spec-val">52</div>
+                  <div class="spec-label">sqm</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-val">2</div>
+                  <div class="spec-label">Guests</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-val">32F</div>
+                  <div class="spec-label">Floor</div>
+                </div>
+              </div>
+            </div>
+            <div class="room-list-footer">
+              <div class="room-price">
+                <span class="from">From</span
+                ><span class="amount">Rp 1.8 Jt</span
+                ><span class="night"> / night</span>
+              </div>
+              <button
+                class="btn-gold"
+                onclick="showPage('contact')"
+                style="font-size: 0.75rem; padding: 12px 24px"
+              >
+                Reserve
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="room-list-card">
+          <div class="room-list-img">
+            <div
+              class="room-list-img-inner"
+              style="
+                background: linear-gradient(135deg, #2a1a0e 0%, #3a2a1a 100%);
+                position: relative;
+              "
+            >
+              <div
+                class="room-pattern"
+                style="position: absolute; inset: 0; opacity: 0.12"
+              ></div>
+              <div
+                class="room-num"
+                style="
+                  position: absolute;
+                  bottom: 10px;
+                  right: 16px;
+                  font-family: &quot;Cormorant Garamond&quot;, serif;
+                  font-size: 5rem;
+                  font-weight: 600;
+                  color: rgba(255, 255, 255, 0.12);
+                "
+              >
+                02
+              </div>
+              <div class="room-badge" style="background: var(--navy)">
+                Suite
+              </div>
+            </div>
+          </div>
+          <div class="room-list-body">
+            <div>
+              <h3>Executive Suite</h3>
+              <p>
+                A gracious 90 sqm suite featuring a separate living area,
+                private bar, and a deep soaking tub overlooking the city. Guests
+                enjoy exclusive access to our Executive Lounge with all-day
+                gourmet refreshments and dedicated concierge services.
+              </p>
+              <div class="room-specs">
+                <div class="spec-item">
+                  <div class="spec-val">90</div>
+                  <div class="spec-label">sqm</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-val">2</div>
+                  <div class="spec-label">Guests</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-val">38F</div>
+                  <div class="spec-label">Floor</div>
+                </div>
+              </div>
+            </div>
+            <div class="room-list-footer">
+              <div class="room-price">
+                <span class="from">From</span
+                ><span class="amount">Rp 3.5 Jt</span
+                ><span class="night"> / night</span>
+              </div>
+              <button
+                class="btn-gold"
+                onclick="showPage('contact')"
+                style="font-size: 0.75rem; padding: 12px 24px"
+              >
+                Reserve
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="room-list-card">
+          <div class="room-list-img">
+            <div
+              class="room-list-img-inner"
+              style="
+                background: linear-gradient(135deg, #1a1a2a 0%, #2a2a3a 100%);
+                position: relative;
+              "
+            >
+              <div
+                class="room-pattern"
+                style="position: absolute; inset: 0; opacity: 0.12"
+              ></div>
+              <div
+                class="room-num"
+                style="
+                  position: absolute;
+                  bottom: 10px;
+                  right: 16px;
+                  font-family: &quot;Cormorant Garamond&quot;, serif;
+                  font-size: 5rem;
+                  font-weight: 600;
+                  color: rgba(255, 255, 255, 0.12);
+                "
+              >
+                03
+              </div>
+              <div class="room-badge" style="background: var(--gold)">
+                Presidential
+              </div>
+            </div>
+          </div>
+          <div class="room-list-body">
+            <div>
+              <h3>Presidential Suite</h3>
+              <p>
+                Our crown jewel — an entire floor (240 sqm) of uncompromising
+                luxury. Two bedrooms, a private cinema, a dedicated dining room
+                for up to 10 guests, 24-hour personal butler, and exclusive
+                rooftop pool access at any hour.
+              </p>
+              <div class="room-specs">
+                <div class="spec-item">
+                  <div class="spec-val">240</div>
+                  <div class="spec-label">sqm</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-val">4</div>
+                  <div class="spec-label">Guests</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-val">42F</div>
+                  <div class="spec-label">Floor</div>
+                </div>
+              </div>
+            </div>
+            <div class="room-list-footer">
+              <div class="room-price">
+                <span class="from">From</span><span class="amount">Rp 8 Jt</span
+                ><span class="night"> / night</span>
+              </div>
+              <button
+                class="btn-gold"
+                onclick="showPage('contact')"
+                style="font-size: 0.75rem; padding: 12px 24px"
+              >
+                Reserve
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-top">
+          <div>
+            <span class="footer-logo">The<span>Grand</span></span>
+            <p class="footer-brand-text">
+              A world-class luxury hotel in the heart of Jakarta. Where every
+              stay becomes an unforgettable memory.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Hotel</h4>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  onclick="
+                    showPage('rooms');
+                    return false;
+                  "
+                  >Rooms & Suites</a
+                >
+              </li>
+              <li><a href="#">Dining</a></li>
+              <li><a href="#">Spa & Wellness</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Info</h4>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  onclick="
+                    showPage('about');
+                    return false;
+                  "
+                  >About Us</a
+                >
+              </li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li>
+                <a
+                  href="#"
+                  onclick="
+                    showPage('contact');
+                    return false;
+                  "
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Cancellation Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2025 The Grand Hotel. All rights reserved.</span
+          ><span>Jakarta, Indonesia</span>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
